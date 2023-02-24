@@ -1,15 +1,15 @@
 function solve(list, num) {
-    let counter = 0;
-    // let  current_list = [];
-    while (true) {
-        if (counter >= list.length) {
-            break
+    let  current_list = [];
+    for (let  i=0; i<list.length; i++) {
+        if (i % num === 0) {
+            current_list.push(list[i])
         }
-        console.log(list[counter])
-        counter += num;
     }
+    return current_list
 }
 
 solve(['5', '20', '31', '4', '20'], 2)
-// solve(['dsa', 'asd', 'test', 'tset'], 2)
-// solve(['1', '2', '3', '4', '5'], 6)
+
+
+
+

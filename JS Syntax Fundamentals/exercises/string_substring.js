@@ -12,8 +12,7 @@ function string_substring(wordToFind, sentence) {
 
 string_substring('javascript', 'JavaScript is the best programming language')
 
-string_substring('python',
-    'JavaScript is the best programming language')
+string_substring('python', 'JavaScript is the best programming language')
 
 
 

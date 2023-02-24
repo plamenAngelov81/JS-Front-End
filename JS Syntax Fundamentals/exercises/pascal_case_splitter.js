@@ -1,9 +1,9 @@
-function splitPascalCase(some_string) {
-    let transformed_list = []
+function splitPascalCase(someString) {
+    let transformedList = []
     let word = ''
 
-    while (some_string.length >0) {
-        let ch = some_string[0]
+    while (someString.length >0) {
+        let ch = someString[0]
         if (word.length === 0 && ch === ch.toUpperCase()) {
             word += ch
         }
@@ -11,19 +11,17 @@ function splitPascalCase(some_string) {
             word += ch
         }
         else {
-            transformed_list.push(word)
+            transformedList.push(word)
             word = ''
             word += ch
         }
-        some_string = some_string.slice(1)
+        someString = someString.slice(1)
     }
-    if (word.length > 0){
-        transformed_list.push(word)
-    }
-    console.log(transformed_list.join(', '))
+
+    transformedList.push(word)
+
+    console.log(transformedList.join(', '))
 }
-
-
 
 splitPascalCase('SplitMeIfYouCanHaHaYouCantOrYouCan')
 

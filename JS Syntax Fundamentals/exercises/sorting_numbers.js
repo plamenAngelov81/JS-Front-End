@@ -10,7 +10,7 @@ function sorting_numbers(input) {
         result.push(first_element);
         result.push(last_element);
     }
-    console.log(result)
+    return result
 }
 
 sorting_numbers([1, 65, 3, 52, 48, 63, 31, -3, 18, 56])

@@ -1,14 +1,13 @@
-function modern_times(text) {
-    let words = text.split(" ");
-    let hashtags = words.filter(word => word.startsWith("#"));
-
-    for (let i = 0; i < hashtags.length; i++) {
-        if (hashtags[i].length > 1) {
-            hashtags[i] = hashtags[i].slice(1)
-
-            console.log(hashtags[i])
+function solve(string){
+    string = string.split(' ')
+    function onlyLettersAndNumbers(str) {
+        return Boolean(str.match(/#[A-Za-z]/));
+    }
+    for (const word of string){
+        if (onlyLettersAndNumbers(word)){
+            console.log(word.slice(1, word.length))
         }
     }
 }
 
-modern_times('The symbol # is known #variously in English-speaking #regions as the #number sign')
+solve('The symbol # is known #variously in English-speaking #regions as the #number sign')
