@@ -2,7 +2,7 @@ function splitPascalCase(someString) {
     let transformedList = []
     let word = ''
 
-    while (someString.length >0) {
+    while (someString.length > 0) {
         let ch = someString[0]
         if (word.length === 0 && ch === ch.toUpperCase()) {
             word += ch
