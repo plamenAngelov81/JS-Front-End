@@ -27,3 +27,5 @@ function solve(string) {
     }
     console.log(result.toFixed(2));
 }
+
+solve('A12k M34k')
