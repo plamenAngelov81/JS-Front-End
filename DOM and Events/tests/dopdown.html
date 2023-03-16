@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="dropdown.css">
+    <title>DropDown</title>
+</head>
+<body>
+<header>
+    <nav>
+        <p>COMPANY NAME</p>
+        <ul class="nav" role="list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+            <li><button onmouseenter="dropdownMouseOver()" onclick="dropdownOnclick()">Tasks</button></li>
+        </ul>
+    </nav>
+    <div class="dropdown">
+        <ul class="dropdown_ul" role="list">
+            <li><a href="#" class="dropdown_p">Link1</a></li>
+            <li><a href="#" class="dropdown_p">Link2</a></li>
+            <li><a href="#" class="dropdown_p">Link3</a></li>
+        </ul>
+    </div>
+</header>
+</body>
+<script src="dropdown.js"></script>
+</html>
