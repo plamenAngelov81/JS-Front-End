@@ -9,8 +9,4 @@ function create(words) {
       newDiv.appendChild(p)
       divContent.appendChild(newDiv)
    }
-
-
-
-
 }
