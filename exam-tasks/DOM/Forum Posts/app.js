@@ -87,10 +87,10 @@ function solve() {
         postTitleElement.textContent = `${postTitle}`
         articleElement.appendChild(postTitleElement)
 
-        postCategoryElement.textContent = `${postCategory}`
+        postCategoryElement.textContent = `Category: ${postCategory}`
         articleElement.appendChild(postCategoryElement)
 
-        postContentElement.textContent = `${postContentText}`
+        postContentElement.textContent = `Content: ${postContentText}`
         articleElement.appendChild(postContentElement)
 
         return articleElement

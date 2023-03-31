@@ -93,7 +93,7 @@ function solve() {
         sellLiElement.classList.add('each-list')
 
         let makeModelSpan = document.createElement('span')
-        makeModelSpan.textContent = `${modelText} ${makeText}`
+        makeModelSpan.textContent = `${makeText} ${modelText}`
 
         let yearSpan = document.createElement('span')
         yearSpan.textContent = `${yearText}`

@@ -4,3 +4,6 @@ settings.py
 __pycache__
 nelly_app/settings.py
 manage.py
+server
+tests
+node_modules

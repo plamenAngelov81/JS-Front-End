@@ -29,7 +29,7 @@ function solve() {
         nameH.textContent = `Name: ${firstname} ${lastname}`
         articleElement.appendChild(nameH)
 
-        inP.textContent = `From data: ${inDate}`
+        inP.textContent = `From date: ${inDate}`
         articleElement.appendChild(inP)
 
         outP.textContent = `To date: ${outDate}`

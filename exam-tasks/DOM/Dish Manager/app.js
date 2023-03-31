@@ -28,10 +28,10 @@ function solve() {
         fullName.textContent = `${firstname} ${lastname}`
         articleElement.appendChild(fullName)
 
-        ageGenderElementCreate.textContent = `${chefGender} ${chefAge}`
+        ageGenderElementCreate.textContent = `${chefGender}, ${chefAge}`
         articleElement.appendChild(ageGenderElementCreate)
 
-        taskAreaElementCreate.textContent = `${taskArea}`
+        taskAreaElementCreate.textContent = `Dish description: ${taskArea}`
         articleElement.appendChild(taskAreaElementCreate)
 
         return articleElement
@@ -79,7 +79,7 @@ function solve() {
         progressStatusElement.appendChild(liElement)
 
         counter += 1
-        progressCountElement.textContent = counter.toString()
+        progressCountElement.textContent = counter
 
         firstnameElement.value = ''
         lastnameElement.value = ''
@@ -101,17 +101,17 @@ function solve() {
 
         let ageGenderData = elements[1]
 
-        ageElement.value = ageGenderData.textContent.split(' ')[1]
-        genderElement.value = ageGenderData.textContent.split(' ')[0]
+        ageElement.value = ageGenderData.textContent.split(', ')[1]
+        genderElement.value = ageGenderData.textContent.split(', ')[0]
 
-        taskElement.value = elements[2].textContent
+        taskElement.value = elements[2].textContent.split(': ')[1]
 
         counter -= 1
-        progressCountElement.textContent = counter.toString()
+        progressCountElement.textContent = counter
 
         ulElement.removeChild(liElement)
-
     }
+
     function completeDish (eventComplete) {
         // let ulElement = eventComplete.target.parentElement.parentElement
         let liElement = eventComplete.target.parentElement
@@ -123,7 +123,7 @@ function solve() {
         finishedUlElement.appendChild(liElement)
 
         counter -= 1
-        progressCountElement.textContent = counter.toString()
+        progressCountElement.textContent = counter
     }
 
     function clearAll() {
